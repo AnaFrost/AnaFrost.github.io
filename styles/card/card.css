@@ -1,0 +1,12 @@
+@import url('./card__image.css');
+@import url('./card__thumbnails.css');
+@import url('./product__info.css');
+
+.card {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-between;
+	width: 1000px;
+	padding: 20px;
+	border-radius: 5px;
+}

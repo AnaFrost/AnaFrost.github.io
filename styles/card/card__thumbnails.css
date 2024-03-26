@@ -1,0 +1,5 @@
+@import url('./thumbnail.css');
+
+.card__thumbnails {
+	width: 70px;
+}
