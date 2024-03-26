@@ -1,0 +1,5 @@
+@import url('./cart__counter.css');
+
+.cart {
+	position: relative;
+}
