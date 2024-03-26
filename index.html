@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<title>Product card</title>
+	</head>
+	<body>
+		<div class="app">
+			<div class="app-info">
+				<h2>О приложении</h2>
+				<p>
+					Это приложение представляет собой компонент карточки написанный на нативном Java Script и имеет следующие
+					элементы:
+				</p>
+				<ul>
+					<li>Меню миниатюр с изображениями продукта, по которым можно переключать основное изображение</li>
+					<li>
+						Блок с информацией о товаре который имеет заголовок, описание товара, цену за единицу товара, цену без
+						скидки, количество товара в наличии и кнопку добавления товара в корзину
+					</li>
+					<li>
+						Кнопка добавления товара активна, если товар в наличии. Так же в корзину можно добавить столько единиц
+						товара, сколько единиц имеется в наличии
+					</li>
+					<li>Кнопка корзины на которой отображается количество добавленных в нее товаров</li>
+				</ul>
+			</div>
+			<div id="card-container"></div>
+		</div>
+		<template id="card-template">
+			<div class="card">
+				<div id="card-thumbnails" class="card__thumbnails"></div>
+				<img id="image" class="card__image" alt="Product" />
+				<div class="product__info">
+					<h3 id="title" class="product__title"></h3>
+					<p id="description" class="product__text"></p>
+					<p id="price" class="product__text"></p>
+					<p id="priceOld" class="product__text"></p>
+					<p id="quantity" class="product__text"></p>
+					<button class="button add-to-cart-btn">Add to cart</button>
+				</div>
+				<div class="cart">
+					<button class="button">
+						<img src="./src/icons/cartIcon.svg" alt="cart" />
+						<span id="cart-counter" class="cart__counter"></span>
+					</button>
+				</div>
+			</div>
+		</template>
+		<script type="module" src="./src/main.js"></script>
+	</body>
+</html>
