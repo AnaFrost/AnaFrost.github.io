@@ -1,5 +1,5 @@
-import { createProductCard } from './components/createProductCard';
-import { getProductData } from './utils/api/getProductData';
+import { createProductCard } from './components/createProductCard.js';
+import { getProductData } from './utils/api/getProductData.js';
 
 const cardContainer = document.getElementById('card-container');
 
