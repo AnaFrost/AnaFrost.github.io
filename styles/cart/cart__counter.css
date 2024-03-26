@@ -1,0 +1,14 @@
+.cart__counter {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #007bff;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 14px;
+	text-align: center;
+	line-height: 25px;
+}
